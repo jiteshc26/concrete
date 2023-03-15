@@ -3,7 +3,7 @@ from app.utils import prediction
 
 app=Flask(__name__)
 
-@app.route("/csc",methods=["POST","GET"])
+@app.route("/",methods=["POST","GET"])
 def start():
     return render_template("concrete.html")
 
