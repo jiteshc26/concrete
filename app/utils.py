@@ -7,10 +7,10 @@ class prediction():
         pass
 
     def load_raw(self):
-        with open("artifacts\concrete.pkl","rb") as model_file:
+        with open(r"artifacts/concrete.pkl","rb") as model_file:
             self.model=pickle.load(model_file)
 
-        with open("artifacts\column_names.json","r") as col_file:
+        with open(r"artifacts/column_names.json","r") as col_file:
             self.column_names=json.load(col_file)    
 
     def predict_strength(self,data):
